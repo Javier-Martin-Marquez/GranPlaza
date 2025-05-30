@@ -12,21 +12,20 @@
 
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cascadia+Code&family=Josefin+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-    h1,
     h2,
     h3,
     h4,
     h5 {
       font-family: 'Cascadia Code';
+      font-size: 2rem;
     }
 
     h1 {
       font-size: 4rem;
+      font-family: 'Cascadia Code';
     }
-
-
 
     p,
     a,
@@ -34,78 +33,72 @@
       font-family: 'Josefin Sans';
       font-size: 1.5rem;
     }
+
+    nav {
+      height: 25vh;
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- Navbar Bootstrap 5 con fondo gris claro -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-secondary-subtle" style="background-color: #f8f9fa;">
-    <div class="container">
-      <!-- Letra más grande en el brand -->
-      <a class="navbar-brand text-dark" href="index.html" style="font-size: 2.4rem; font-weight: bold; ">Gran Plaza
-        2</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <nav class="navbar navbar-expand-md bg-secondary-subtle text-dark navbar-light sticky-top">
-        <div class="container">
+  <header>
+    <!-- Navbar Bootstrap 5 con fondo gris claro -->
+    <nav class="navbar navbar-expand-xxl navbar-light bg-secondary-subtle" style="background-color: #f8f9fa;">
+      <div class="container">
 
-          <!-- Logo -->
-          <a class="navbar-brand" href="#">
-            <img src="logo.svg" height="40" alt="">
-          </a>
+        <!-- Título principal -->
+        <a class="navbar-brand text-dark" href="index.html" style="font-size: 2.4rem; font-weight: bold;">Gran
+          Plaza 2</a>
 
-          <!-- Botón Responsive -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#principal"
-            aria-controls="principal" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- <span class="navbar-toggler-icon"></span> -->
-            <i class="bi bi-caret-down-square-fill"></i>
-          </button>
+        <!-- Botón para responsive -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="principal">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 p-4">
-              <li class="nav-item fs-5">
-                <a class="nav-link" aria-current="page" href="#inicio.html">Inicio</a>
-              </li>
-              <li class="nav-item fs-5">
-                <a class="nav-link" aria-current="page" href="">Tiendas</a>
-              </li>
-
-              <li class="nav-item fs-5">
-                <a class="nav-link" aria-current="page" href="">Restaurantes</a>
-              </li>
-              <li class="nav-item fs-5">
-                <a class="nav-link" aria-current="page" href="ocio.html">Ocio</a>
-              </li>
-              <li class="nav-item fs-5">
-                <a class="nav-link" aria-current="page" href="visitanos.html">Visitanos</a>
-              </li>
-              <li class="nav-item fs-5">
-                <a class="nav-link" aria-current="page" href="contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item fs-5">
-                <a class="nav-link" aria-current="page" href="#">Cine</a>
-              </li>
-              <li class="nav-item fs-5">
-                <a class="nav-link" aria-current="page" href="avisoLegal.html">AvisoLegal</a>
-              </li>
-              <li class="nav-item fs-5">
-                <a class="nav-link" aria-current="page" href="">Noticias</a>
-              </li>
-
-            </ul>
-          </div>
+        <!-- Enlaces del menú -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 p-4">
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../portada/index.html">Inicio</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../tiendas/tiendas.html">Tiendas</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../restaurantes/resturantes.html">Restaurantes</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../ocio/ocio.html">Ocio</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../visitanos/vistanos.html">Visítanos</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../cine/cine.html">Cine</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../avisoLegal/avisoLegal.html">Aviso Legal</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../noticias/noticias.html">Noticias</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-  </nav>
+      </div>
+    </nav>
+
+  </header>
 
   <article class="container my-5">
-    <div class="row gy-4">
-
+    <section class="row gy-4">
       <!-- Horarios y Dirección -->
-      <div class="col-md-6 mb-5">
+      <!-- Horarios -->
+      <div class="col-lg-6 mb-5">
         <section>
           <h2><i class="fa-solid fa-clock me-2 text-primary"></i>Horarios</h2>
           <p>Abierto todos los días de 10:00 a 22:00.</p>
@@ -114,7 +107,9 @@
           <p>Los restaurantes y la zona de ocio permanecen abiertos hasta las 00:00 los fines de semana.</p>
         </section>
       </div>
-      <div class="col-md-6">
+
+      <!-- Dirección -->
+      <div class="col-lg-6 mb-5">
         <section>
           <h2><i class="fa-solid fa-location-dot me-2 text-danger"></i>Dirección</h2>
           <p>Calle de los Químicos, 2, 28222 Majadahonda, Madrid.</p>
@@ -125,7 +120,8 @@
       </div>
 
       <!-- Transporte y Parking -->
-      <div class="col-md-6 mb-5 mt-5">
+      <!-- Transporte -->
+      <div class="col-lg-6 mb-5 mt-5">
         <section>
           <h2><i class="fa-solid fa-bus me-2 text-warning"></i>Transporte Público</h2>
           <p><i class="fa-solid fa-bus-simple me-2"></i>Autobuses: Líneas 123, 456.</p>
@@ -136,7 +132,9 @@
             bicicleta.</p>
         </section>
       </div>
-      <div class="col-md-6">
+
+      <!-- Parking -->
+      <div class="col-lg-6">
         <section>
           <h2><i class="fa-solid fa-car me-2 text-info"></i>Parking</h2>
           <p>Disponemos de un amplio aparcamiento subterráneo con más de 1,000 plazas.</p>
@@ -148,7 +146,8 @@
       </div>
 
       <!-- Datos de Contacto y Otros Servicios -->
-      <div class="col-md-6 mb-5 mt-5">
+      <!-- Datos de Contacto -->
+      <div class="col-lg-6 mb-5 mt-5">
         <section>
           <h2><i class="fa-solid fa-phone me-2 text-success"></i>Datos de Contacto</h2>
           <p><i class="fa-solid fa-phone-volume me-2"></i>Teléfono: 912 345 678</p>
@@ -169,7 +168,8 @@
         </section>
       </div>
 
-      <div class="col-md-6">
+      <!-- Otros Servicios -->
+      <div class="col-lg-6">
         <section>
           <h2><i class="fa-solid fa-wrench me-2 text-muted"></i>Otros Servicios</h2>
           <ul>
@@ -200,15 +200,14 @@
         <img src="plano.png" alt="Plano Gran Plaza 2" class="img-fluid w-100 rounded border shadow-sm">
       </div>
 
-
-    </div>
+    </section>
   </article>
 
-
-
+  <!-- Footer con Bootstrap -->
   <footer class="bg-dark text-white text-center text-lg-start mt-5">
-    <section class="container p-4 d-flex flex-column align-items-center text-center text-md-start">
+    <section class="container p-4 d-flex flex-column align-items-center" style="max-width: 1140px;">
       <p>&copy; 2025 Gran Plaza 2 - Todos los derechos reservados</p>
+
       <div class="mb-3">
         <a href="https://www.centrocomercialgranplaza2.com/" class="text-white text-decoration-none"
           target="_blank">Sitio Oficial</a>
@@ -219,9 +218,11 @@
         <a href="https://www.instagram.com/granplazados/" class="text-white text-decoration-none ms-3" target="_blank">|
           Instagram</a>
       </div>
+
       <p>Ubicado en: C. de los Químicos, 2, 28760 Tres Cantos, Madrid</p>
     </section>
   </footer>
+
 </body>
 
 </html>

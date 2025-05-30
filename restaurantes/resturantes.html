@@ -31,6 +31,10 @@
             font-size: 1.5rem;
         }
 
+        nav {
+            height: 25vh;
+        }
+
         .container img {
             width: 70%;
         }
@@ -49,6 +53,11 @@
         .col img {
             cursor: pointer;
         }
+
+        .tienda:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
     </style>
 
 </head>
@@ -62,55 +71,58 @@
     -->
 
 
-    <!-- Navbar Bootstrap 5 con fondo gris claro -->
-    <nav class="navbar navbar-expand-xxl navbar-light bg-secondary-subtle sticky-top"
-        style="background-color: #f8f9fa;">
-        <div class="container">
+    <header>
+        <!-- Navbar Bootstrap 5 con fondo gris claro -->
+        <nav class="navbar navbar-expand-xxl navbar-light bg-secondary-subtle" style="background-color: #f8f9fa;">
+            <div class="container">
 
-            <!-- Título principal -->
-            <a class="navbar-brand text-dark" href="index.html" style="font-size: 2.4rem; font-weight: bold;">Gran
-                Plaza 2</a>
+                <!-- Título principal -->
+                <a class="navbar-brand text-dark" href="index.html" style="font-size: 2.4rem; font-weight: bold;">Gran
+                    Plaza 2</a>
 
-            <!-- Botón para responsive -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-caret-down-square-fill"></i>
-            </button>
+                <!-- Botón para responsive -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-caret-down-square-fill"></i>
+                </button>
 
-            <!-- Enlaces del menú -->
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 p-4">
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../portada/index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../tiendas/tiendas.html">Tiendas</a>
-                    </li>
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../restaurantes/resturantes.html">Restaurantes</a>
-                    </li>
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../ocio/ocio.html">Ocio</a>
-                    </li>
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../visitanos/vistanos.html">Visítanos</a>
-                    </li>
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../Cine/cine.html">Cine</a>
-                    </li>
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../avisoYlegal/avisoLegal.html">Aviso Legal</a>
-                    </li>
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../noticias/noticias.html">Noticias</a>
-                    </li>
-                </ul>
+                <!-- Enlaces del menú -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 p-4">
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../portada/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../tiendas/tiendas.html">Tiendas</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../restaurantes/resturantes.html">Restaurantes</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../ocio/ocio.html">Ocio</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../visitanos/vistanos.html">Visítanos</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../cine/cine.html">Cine</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../avisoLegal/avisoLegal.html">Aviso Legal</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../noticias/noticias.html">Noticias</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
 
     <article class="container">
         <!-- ICONOS (RESTAURANTES) -->
@@ -119,7 +131,7 @@
                 <!-- Rodilla-->
                 <div class="col text-center">
                     <div
-                        class="h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
+                        class="tienda h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
                         <img src="rodilla.png" alt="Rodilla" class="img-fluid" width="250" height="250"
                             data-bs-toggle="modal" data-bs-target="#rodilla">
                     </div>
@@ -129,7 +141,7 @@
                 <!-- Taco Bell-->
                 <div class="col text-center">
                     <div
-                        class="h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
+                        class="tienda h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
                         <img src="tacobell.png" alt="Taco Bell" class="img-fluid" width="250" height="250"
                             data-bs-toggle="modal" data-bs-target="#tacobell">
                     </div>
@@ -139,7 +151,7 @@
                 <!-- Goiko-->
                 <div class="col text-center">
                     <div
-                        class="h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
+                        class="tienda h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
                         <img src="goiko.png" alt="Goiko" class="img-fluid" width="250" height="250"
                             data-bs-toggle="modal" data-bs-target="#goiko">
                     </div>
@@ -149,7 +161,7 @@
                 <!-- 100 Montaditos-->
                 <div class="col text-center">
                     <div
-                        class="h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
+                        class="tienda h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
                         <img src="100montaditos.png" alt="100 Montaditos" class="img-fluid" width="250" height="250"
                             data-bs-toggle="modal" data-bs-target="#100mon">
                     </div>
@@ -159,7 +171,7 @@
                 <!-- Tagliatella-->
                 <div class="col text-center">
                     <div
-                        class="h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
+                        class="tienda h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
                         <img src="tagliatella.png" alt="Tagliatella" class="img-fluid" width="250" height="250"
                             data-bs-toggle="modal" data-bs-target="#tagliatella">
                     </div>
@@ -169,7 +181,7 @@
                 <!-- Vips-->
                 <div class="col text-center">
                     <div
-                        class="h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
+                        class="tienda h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
                         <img src="vips.png" alt="VIPS" class="img-fluid" width="250" height="250" data-bs-toggle="modal"
                             data-bs-target="#vips">
                     </div>
@@ -179,7 +191,7 @@
                 <!-- Urban Poke-->
                 <div class="col text-center">
                     <div
-                        class="h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
+                        class="tienda h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
                         <img src="urbanpoke.png" alt="Urban Poke" class="img-fluid" width="250" height="250"
                             data-bs-toggle="modal" data-bs-target="#poke">
                     </div>
@@ -189,7 +201,7 @@
                 <!-- Udon-->
                 <div class="col text-center">
                     <div
-                        class="h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
+                        class="tienda h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
                         <img src="udon.png" alt="Udon" class="img-fluid" width="250" height="250" data-bs-toggle="modal"
                             data-bs-target="#udon">
                     </div>

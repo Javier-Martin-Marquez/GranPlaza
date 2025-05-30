@@ -11,16 +11,17 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-    h1,
     h2,
     h3,
     h4,
     h5 {
       font-family: 'Cascadia Code';
+      font-size: 2rem;
     }
 
     h1 {
       font-size: 4rem;
+      font-family: 'Cascadia Code';
     }
 
     p,
@@ -29,72 +30,65 @@
       font-family: 'Josefin Sans';
       font-size: 1.5rem;
     }
+
+    nav {
+      height: 25vh;
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- Navbar Bootstrap 5 con fondo gris claro -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-secondary-subtle" style="background-color: #f8f9fa;">
-    <div class="container">
-      <!-- Letra más grande en el brand -->
-      <a class="navbar-brand text-dark" href="index.html" style="font-size: 2.4rem; font-weight: bold; ">Gran Plaza
-        2</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <nav class="navbar navbar-expand-md bg-secondary-subtle text-dark navbar-light sticky-top">
-        <div class="container">
+  <header>
+    <!-- Navbar Bootstrap 5 con fondo gris claro -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary-subtle " style="background-color: #f8f9fa;">
+      <div class="container">
 
-          <!-- Logo -->
-          <a class="navbar-brand" href="#">
-            <img src="logo.svg" height="40" alt="">
-          </a>
+        <!-- Título principal -->
+        <a class="navbar-brand text-dark" href="index.html" style="font-size: 2.4rem; font-weight: bold;">Gran
+          Plaza 2</a>
 
-          <!-- Botón Responsive -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#principal"
-            aria-controls="principal" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- <span class="navbar-toggler-icon"></span> -->
-            <i class="bi bi-caret-down-square-fill"></i>
-          </button>
+        <!-- Botón para responsive -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-caret-down-square-fill"></i>
+        </button>
 
-          <div class="collapse navbar-collapse" id="principal">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 p-4">
-              <li class="nav-item fs-5">
-                <a class="nav-link" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item fs-5">
-                <a class="nav-link" aria-current="page" href="">Tiendas</a>
-              </li>
-
-              <li class="nav-item fs-5">
-                <a class="nav-link" aria-disabled="true">Restaurantes</a>
-              </li>
-              <li class="nav-item fs-5">
-                <a class="nav-link" aria-current="page" href="ocio.html">Ocio</a>
-              </li>
-              <li class="nav-item fs-5">
-                <a class="nav-link" href="visitanos.html">Visitanos</a>
-              </li>
-              <li class="nav-item fs-5">
-                <a class="nav-link" aria-disabled="true">Contacto</a>
-              </li>
-              <li class="nav-item fs-5">
-                <a class="nav-link" aria-current="page" href="#">Cine</a>
-              </li>
-              <li class="nav-item fs-5">
-                <a class="nav-link" href="avisoLegal.html">AvisoLegal</a>
-              </li>
-              <li class="nav-item fs-5">
-                <a class="nav-link" aria-disabled="true">Noticias</a>
-              </li>
-
-            </ul>
-          </div>
+        <!-- Enlaces del menú -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 p-4">
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../portada/index.html">Inicio</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../tiendas/tiendas.html">Tiendas</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../restaurantes/resturantes.html">Restaurantes</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../ocio/ocio.html">Ocio</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../visitanos/vistanos.html">Visítanos</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../cine/cine.html">Cine</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../avisoYlegal/avisoLegal.html">Aviso Legal</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../noticias/noticias.html">Noticias</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-  </nav>
+      </div>
+    </nav>
+  </header>
 
 
   <article class="container my-5">
@@ -251,7 +245,7 @@
 
 
   <!-- Footer con Bootstrap -->
-  <footer class="bg-dark text-white text-center text-lg-start mt-5">
+  <footer class="bg-dark text-white text-center text-lg-start mt-3 ">
     <section class="container p-4 d-flex flex-column align-items-center" style="max-width: 1140px;">
       <p>&copy; 2025 Gran Plaza 2 - Todos los derechos reservados</p>
 
@@ -268,7 +262,6 @@
 
       <p>Ubicado en: C. de los Químicos, 2, 28760 Tres Cantos, Madrid</p>
     </section>
-      
   </footer>
 
 </body>

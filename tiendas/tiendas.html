@@ -11,6 +11,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
+        
         h2,
         h3,
         h4,
@@ -30,6 +31,11 @@
             font-size: 1.5rem;
         }
 
+        nav{
+            height: 25vh;
+        }
+
+
         .container img {
             width: 70%;
         }
@@ -48,6 +54,11 @@
         .col img {
             cursor: pointer;
         }
+
+        .tienda:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
     </style>
 
 </head>
@@ -60,55 +71,59 @@
         <h2>Tiendas del Centro Comercial Gran Plaza 2</h2>
     </header>
     -->
+    <header>
+        <!-- Navbar Bootstrap 5 con fondo gris claro -->
+        <nav class="navbar navbar-expand-xxl navbar-light bg-secondary-subtle"
+            style="background-color: #f8f9fa;">
+            <div class="container">
 
-    <!-- Navbar Bootstrap 5 con fondo gris claro -->
-    <nav class="navbar navbar-expand-xxl navbar-light bg-secondary-subtle sticky-top" style="background-color: #f8f9fa;">
-        <div class="container">
+                <!-- Título principal -->
+                <a class="navbar-brand text-dark" href="index.html" style="font-size: 2.4rem; font-weight: bold;">Gran
+                    Plaza 2</a>
 
-            <!-- Título principal -->
-            <a class="navbar-brand text-dark" href="index.html" style="font-size: 2.4rem; font-weight: bold;">Gran
-                Plaza 2</a>
+                <!-- Botón para responsive -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <!-- Botón para responsive -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-caret-down-square-fill"></i>
-            </button>
-
-            <!-- Enlaces del menú -->
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 p-4">
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../portada/index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../tiendas/tiendas.html">Tiendas</a>
-                    </li>
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../restaurantes/resturantes.html">Restaurantes</a>
-                    </li>
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../ocio/ocio.html">Ocio</a>
-                    </li>
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../visitanos/vistanos.html">Visítanos</a>
-                    </li>
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
-                    </li>
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../Cine/cine.html">Cine</a>
-                    </li>
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../avisoYlegal/avisoLegal.html">Aviso Legal</a>
-                    </li>
-                    <li class="nav-item fs-5">
-                        <a class="nav-link" href="../noticias/noticias.html">Noticias</a>
-                    </li>
-                </ul>
+                <!-- Enlaces del menú -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 p-4">
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../portada/index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../tiendas/tiendas.html">Tiendas</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../restaurantes/resturantes.html">Restaurantes</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../ocio/ocio.html">Ocio</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../visitanos/vistanos.html">Visítanos</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../cine/cine.html">Cine</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../avisoLegal/avisoLegal.html">Aviso Legal</a>
+                        </li>
+                        <li class="nav-item fs-5">
+                            <a class="nav-link" href="../noticias/noticias.html">Noticias</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+
 
     <article class="container">
         <!-- ICONOS (TIENDAS) -->
@@ -117,7 +132,7 @@
                 <!-- Zara -->
                 <div class="col text-center">
                     <div
-                        class="h-100 d-flex align-items-center justify-content-center border border-primary p-3 rounded-3 position-relative">
+                        class="tienda h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
                         <img src="zara.png" alt="Zara" class="img-fluid rounded" width="250" height="250"
                             data-bs-toggle="modal" data-bs-target="#zara">
                     </div>
@@ -125,7 +140,7 @@
                 <!-- Mango -->
                 <div class="col text-center">
                     <div
-                        class="h-100 d-flex align-items-center justify-content-center border border-primary p-3 rounded-3 position-relative">
+                        class="tienda h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
                         <img src="mango.png" alt="Mango" class="img-fluid rounded" width="250" height="250"
                             data-bs-toggle="modal" data-bs-target="#mango">
                     </div>
@@ -133,7 +148,7 @@
                 <!-- Jack & Jones -->
                 <div class="col text-center">
                     <div
-                        class="h-100 d-flex align-items-center justify-content-center border border-primary p-3 rounded-3 position-relative">
+                        class="tienda h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
                         <img src="jackjones.png" alt="Jack & Jones" class="img-fluid rounded" width="250" height="250"
                             data-bs-toggle="modal" data-bs-target="#jackJones">
                     </div>
@@ -141,7 +156,7 @@
                 <!-- JD Sports -->
                 <div class="col text-center">
                     <div
-                        class="h-100 d-flex align-items-center justify-content-center border border-primary p-3 rounded-3 position-relative">
+                        class="tienda h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
                         <img src="jdsports.png" alt="JD Sports" class="img-fluid rounded" width="250" height="250"
                             data-bs-toggle="modal" data-bs-target="#JD">
                     </div>
@@ -149,7 +164,7 @@
                 <!-- Apple -->
                 <div class="col text-center">
                     <div
-                        class="h-100 d-flex align-items-center justify-content-center border border-primary p-3 rounded-3 position-relative">
+                        class="tienda h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
                         <img src="apple.png" alt="Apple Store" class="img-fluid rounded" width="250" height="250"
                             data-bs-toggle="modal" data-bs-target="#apple">
                     </div>
@@ -157,7 +172,7 @@
                 <!-- FNAC -->
                 <div class="col text-center">
                     <div
-                        class="h-100 d-flex align-items-center justify-content-center border border-primary p-3 rounded-3 position-relative">
+                        class="tienda h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
                         <img src="fnac.png" alt="FNAC" class="img-fluid rounded" width="250" height="250"
                             data-bs-toggle="modal" data-bs-target="#fnac">
                     </div>
@@ -165,7 +180,7 @@
                 <!-- Druni -->
                 <div class="col text-center">
                     <div
-                        class="h-100 d-flex align-items-center justify-content-center border border-primary p-3 rounded-3 position-relative">
+                        class="tienda h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
                         <img src="druni.png" alt="Druni" class="img-fluid rounded" width="250" height="250"
                             data-bs-toggle="modal" data-bs-target="#druni">
                     </div>
@@ -173,7 +188,7 @@
                 <!-- Alcampo -->
                 <div class="col text-center">
                     <div
-                        class="h-100 d-flex align-items-center justify-content-center border border-primary p-3 rounded-3 position-relative">
+                        class="tienda h-100 d-flex align-items-center justify-content-center border border-dark p-3 rounded-3 position-relative">
                         <img src="alcampo.png" alt="Alcampo" class="img-fluid rounded" width="250" height="250"
                             data-bs-toggle="modal" data-bs-target="#alcampo">
                     </div>
@@ -430,7 +445,6 @@
             <p>Ubicado en: C. de los Químicos, 2, 28760 Tres Cantos, Madrid</p>
         </section>
     </footer>
-
 
 </body>
 
