@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visítanos - Gran Plaza 2</title>
-  <link rel="icon" type="png" href="favicon.png">
+  <link rel="icon" type="png" href="../favicon.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -34,9 +34,6 @@
       font-size: 1.5rem;
     }
 
-    nav {
-      height: 25vh;
-    }
   </style>
 </head>
 
@@ -44,22 +41,23 @@
 
   <header>
     <!-- Navbar Bootstrap 5 con fondo gris claro -->
-    <nav class="navbar navbar-expand-xxl navbar-light bg-secondary-subtle" style="background-color: #f8f9fa;">
-      <div class="container">
-
+    <nav class="navbar navbar-expand-xl navbar-light bg-secondary-subtle" style="background-color: #f8f9fa;">
+      <div class="container-fluid px-5">
         <!-- Título principal -->
-        <a class="navbar-brand text-dark" href="index.html" style="font-size: 2.4rem; font-weight: bold;">Gran
-          Plaza 2</a>
+        <a class="navbar-brand text-dark" href="index.html" style="font-size: 2.4rem; font-weight: bold;">
+          Gran Plaza 2
+        </a>
 
-        <!-- Botón para responsive -->
+        <!-- Botón responsive -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Enlaces del menú -->
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 p-4">
+
+        <!-- Contenedor del menú -->
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+          <ul class="navbar-nav mb-2 gap-3 p-4">
             <li class="nav-item fs-5">
               <a class="nav-link" href="../portada/index.html">Inicio</a>
             </li>
@@ -91,7 +89,6 @@
         </div>
       </div>
     </nav>
-
   </header>
 
   <article class="container my-5">
