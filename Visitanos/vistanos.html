@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visítanos - Gran Plaza 2</title>
+  <link rel="icon" type="png" href="favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: 'Cascadia Code';
+      font-size: 2rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-family: 'Cascadia Code';
+    }
+
+    p,
+    a,
+    li {
+      font-family: 'Josefin Sans';
+      font-size: 1.5rem;
+    }
+
+    nav {
+      height: 25vh;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <!-- Navbar Bootstrap 5 con fondo gris claro -->
+    <nav class="navbar navbar-expand-xxl navbar-light bg-secondary-subtle" style="background-color: #f8f9fa;">
+      <div class="container">
+
+        <!-- Título principal -->
+        <a class="navbar-brand text-dark" href="index.html" style="font-size: 2.4rem; font-weight: bold;">Gran
+          Plaza 2</a>
+
+        <!-- Botón para responsive -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Enlaces del menú -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 p-4">
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../portada/index.html">Inicio</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../tiendas/tiendas.html">Tiendas</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../restaurantes/resturantes.html">Restaurantes</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../ocio/ocio.html">Ocio</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../visitanos/vistanos.html">Visítanos</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../cine/cine.html">Cine</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../avisoLegal/avisoLegal.html">Aviso Legal</a>
+            </li>
+            <li class="nav-item fs-5">
+              <a class="nav-link" href="../noticias/noticias.html">Noticias</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <article class="container my-5">
+    <section class="row gy-4">
+      <!-- Horarios y Dirección -->
+      <!-- Horarios -->
+      <div class="col-lg-6 mb-5">
+        <section>
+          <h2><i class="fa-solid fa-clock me-2 text-primary"></i>Horarios</h2>
+          <p>Abierto todos los días de 10:00 a 22:00.</p>
+          <p>Algunas tiendas pueden tener horarios especiales en festivos o domingos. Consulta directamente con el
+            establecimiento deseado.</p>
+          <p>Los restaurantes y la zona de ocio permanecen abiertos hasta las 00:00 los fines de semana.</p>
+        </section>
+      </div>
+
+      <!-- Dirección -->
+      <div class="col-lg-6 mb-5">
+        <section>
+          <h2><i class="fa-solid fa-location-dot me-2 text-danger"></i>Dirección</h2>
+          <p>Calle de los Químicos, 2, 28222 Majadahonda, Madrid.</p>
+          <p>El centro se encuentra a tan solo 5 minutos del Hospital Universitario Puerta de Hierro y junto al parque
+            empresarial de Majadahonda.</p>
+          <p>Accesos directos desde la M-503 y la M-50, salida 79A.</p>
+        </section>
+      </div>
+
+      <!-- Transporte y Parking -->
+      <!-- Transporte -->
+      <div class="col-lg-6 mb-5 mt-5">
+        <section>
+          <h2><i class="fa-solid fa-bus me-2 text-warning"></i>Transporte Público</h2>
+          <p><i class="fa-solid fa-bus-simple me-2"></i>Autobuses: Líneas 123, 456.</p>
+          <p><i class="fa-solid fa-train me-2"></i>Estación de tren más cercana: Majadahonda (Línea C-7).</p>
+          <p><i class="fa-solid fa-map-location-dot me-2"></i>Paradas de autobús justo en la entrada principal del
+            centro comercial.</p>
+          <p><i class="fa-solid fa-bicycle me-2"></i>Aparcabicis disponibles en la entrada norte para quienes lleguen en
+            bicicleta.</p>
+        </section>
+      </div>
+
+      <!-- Parking -->
+      <div class="col-lg-6">
+        <section>
+          <h2><i class="fa-solid fa-car me-2 text-info"></i>Parking</h2>
+          <p>Disponemos de un amplio aparcamiento subterráneo con más de 1,000 plazas.</p>
+          <p>Las dos primeras horas son gratuitas todos los días.</p>
+          <p>Existen plazas reservadas para personas con movilidad reducida, familias con niños pequeños y motocicletas.
+          </p>
+          <p>También contamos con zonas de aparcamiento rápido para recogida de pedidos online.</p>
+        </section>
+      </div>
+
+      <!-- Datos de Contacto y Otros Servicios -->
+      <!-- Datos de Contacto -->
+      <div class="col-lg-6 mb-5 mt-5">
+        <section>
+          <h2><i class="fa-solid fa-phone me-2 text-success"></i>Datos de Contacto</h2>
+          <p><i class="fa-solid fa-phone-volume me-2"></i>Teléfono: 912 345 678</p>
+          <p><i class="fa-solid fa-envelope me-2"></i>Email: contacto@granplaza2.com</p>
+          <p><i class="fa-solid fa-map-marker-alt me-2"></i>Dirección: Calle Ficticia 123, Madrid, España</p>
+          <p><i class="fa-solid fa-circle-info me-2"></i>Atención al cliente disponible de lunes a viernes de 9:00 a
+            18:00.</p>
+          <p><i class="fa-solid fa-comments me-2"></i>También puedes contactarnos a través de nuestras redes sociales
+            para resolver dudas rápidas:</p>
+          <ul>
+            <li><i class="fa-brands fa-facebook me-2"></i><a href="https://www.facebook.com/granplaza2"
+                target="_blank">Facebook</a></li>
+            <li><i class="fa-brands fa-twitter me-2"></i><a href="https://twitter.com/granplaza2"
+                target="_blank">Twitter</a></li>
+            <li><i class="fa-brands fa-instagram me-2"></i><a href="https://www.instagram.com/granplaza2"
+                target="_blank">Instagram</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Otros Servicios -->
+      <div class="col-lg-6">
+        <section>
+          <h2><i class="fa-solid fa-wrench me-2 text-muted"></i>Otros Servicios</h2>
+          <ul>
+            <li><i class="fa-solid fa-wifi me-2"></i>Wi-Fi gratuito en todo el centro con conexión segura y rápida.</li>
+            <li><i class="fa-solid fa-baby me-2"></i>Guardería disponible con personal cualificado y zonas seguras de
+              juego.</li>
+            <li><i class="fa-solid fa-charging-station me-2"></i>Puntos de carga para vehículos eléctricos en el nivel
+              -1.</li>
+            <li><i class="fa-solid fa-couch me-2"></i>Zonas de descanso con sofás y estaciones de recarga USB.</li>
+            <li><i class="fa-solid fa-dog me-2"></i>Centro pet-friendly con bebederos y áreas para mascotas en
+              exteriores.</li>
+            <li><i class="fa-solid fa-hand-holding-heart me-2"></i>Espacio solidario para donaciones y campañas
+              benéficas mensuales.</li>
+          </ul>
+        </section>
+      </div>
+
+      <!-- Mapa de Localización (iframe) -->
+      <div class="col-12 mb-4">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3034.2769403816947!2d-3.8998578241687576!3d40.49125867142769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4184f353efffff%3A0xe24e694158f0d64f!2sGran%20Plaza%202!5e0!3m2!1ses!2ses!4v1747731660175!5m2!1ses!2ses"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <!-- Plano de Establecimientos (imagen) -->
+      <div class="col-12 mb-5">
+        <img src="plano.png" alt="Plano Gran Plaza 2" class="img-fluid w-100 rounded border shadow-sm">
+      </div>
+
+    </section>
+  </article>
+
+  <!-- Footer con Bootstrap -->
+  <footer class="bg-dark text-white text-center text-lg-start mt-5">
+    <section class="container p-4 d-flex flex-column align-items-center" style="max-width: 1140px;">
+      <p>&copy; 2025 Gran Plaza 2 - Todos los derechos reservados</p>
+
+      <div class="mb-3">
+        <a href="https://www.centrocomercialgranplaza2.com/" class="text-white text-decoration-none"
+          target="_blank">Sitio Oficial</a>
+        <a href="https://www.facebook.com/granplazados" class="text-white text-decoration-none ms-3" target="_blank">|
+          Facebook</a>
+        <a href="https://www.tiktok.com/@granplaza2" class="text-white text-decoration-none ms-3" target="_blank">|
+          TikTok</a>
+        <a href="https://www.instagram.com/granplazados/" class="text-white text-decoration-none ms-3" target="_blank">|
+          Instagram</a>
+      </div>
+
+      <p>Ubicado en: C. de los Químicos, 2, 28760 Tres Cantos, Madrid</p>
+    </section>
+  </footer>
+
+</body>
+
+</html>
