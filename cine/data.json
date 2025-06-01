@@ -1,0 +1,86 @@
+[
+  {
+    "titulo": "1989",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/f/f6/Taylor_Swift_-_1989.png",
+    "alt": "1989",
+    "funciones": "2:00pm | 5:00pm | 8:00pm",
+    "sinopsis": "Dirigida por Taylor Swift, este drama pop-sintético nos lleva a una travesía nostálgica por la década de los 80."
+  },
+  {
+    "titulo": "My Beautiful Dark Twisted Fantasy",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/f/f0/My_Beautiful_Dark_Twisted_Fantasy.jpg",
+    "alt": "My Beautiful Dark Twisted Fantasy",
+    "funciones": "3:00pm | 6:00pm | 9:00pm",
+    "sinopsis": "Un viaje oscuro por la mente de un genio: Kanye West presenta esta fantasía retorcida con tintes de hip hop."
+  },
+  {
+    "titulo": "21",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/1/1b/Adele_-_21.png",
+    "alt": "21",
+    "funciones": "12:00pm | 3:00pm | 6:00pm",
+    "sinopsis": "Adele protagoniza esta emotiva película musical que explora el desamor y la redención con alma y pop."
+  },
+  {
+    "titulo": "Lemonade",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/5/53/Beyonce_-_Lemonade_%28Official_Album_Cover%29.png",
+    "alt": "Lemonade",
+    "funciones": "1:30pm | 4:30pm | 7:30pm",
+    "sinopsis": "Un retrato visual y sonoro del empoderamiento femenino dirigido por Beyoncé. R&B en su forma más cruda y poderosa."
+  },
+  {
+    "titulo": "El Madrileño",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/8/8f/ElMadrile%C3%B1oCTangana.jpg",
+    "alt": "El Madrileño",
+    "funciones": "2:00pm | 5:00pm | 8:00pm",
+    "sinopsis": "C. Tangana dirige esta oda moderna a la identidad española mezclando pop, flamenco y reguetón."
+  },
+  {
+    "titulo": "El Mal Querer",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/e/e9/Rosal%C3%ADa_El_mal_querer.png",
+    "alt": "El Mal Querer",
+    "funciones": "3:00pm | 6:00pm | 9:00pm",
+    "sinopsis": "Rosalía adapta una novela medieval en esta película visual cargada de pasión flamenca y estética moderna."
+  },
+  {
+    "titulo": "Melodrama",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/b/b2/Lorde_-_Melodrama.png",
+    "alt": "Melodrama",
+    "funciones": "4:00pm | 7:00pm | 10:00pm",
+    "sinopsis": "Lorde presenta una introspectiva odisea emocional con estilo electropop en este drama juvenil moderno."
+  },
+  {
+    "titulo": "When We All Fall Asleep, Where Do We Go?",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/3/38/When_We_All_Fall_Asleep%2C_Where_Do_We_Go%3F.png",
+    "alt": "Billie Eilish",
+    "funciones": "1:00pm | 4:00pm | 7:00pm",
+    "sinopsis": "Billie Eilish explora los miedos adolescentes con un giro oscuro y melancólico en esta cinta electropop."
+  },
+  {
+    "titulo": "Future Nostalgia",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/f/f5/Dua_Lipa_-_Future_Nostalgia_%28Official_Album_Cover%29.png",
+    "alt": "Future Nostalgia",
+    "funciones": "12:30pm | 3:30pm | 6:30pm",
+    "sinopsis": "Dua Lipa mezcla el disco clásico con el futuro en esta aventura brillante y rítmica llena de energía."
+  },
+  {
+    "titulo": "Random Access Memories",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/2/26/Daft_Punk_-_Random_Access_Memories.png",
+    "alt": "Daft Punk",
+    "funciones": "5:00pm | 8:00pm | 11:00pm",
+    "sinopsis": "Una experiencia electrónica cinematográfica dirigida por Daft Punk que honra la música disco de los 70."
+  },
+  {
+    "titulo": "Good Kid, M.A.A.D City",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/9/93/KendrickGKMC.jpg",
+    "alt": "Good Kid",
+    "funciones": "2:00pm | 6:00pm | 10:00pm",
+    "sinopsis": "Kendrick Lamar dirige este crudo retrato de juventud, violencia y redención en las calles de Compton."
+  },
+  {
+    "titulo": "Rough and Rowdy Ways",
+    "imagen": "https://upload.wikimedia.org/wikipedia/en/9/9a/Bob_Dylan_-_Rough_and_Rowdy_Ways.png",
+    "alt": "Bob Dylan",
+    "funciones": "11:00am | 2:00pm | 5:00pm",
+    "sinopsis": "Bob Dylan nos invita a una reflexión poética sobre el paso del tiempo y el alma estadounidense."
+  }
+]
