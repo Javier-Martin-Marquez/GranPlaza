@@ -7,59 +7,8 @@
     <link rel="icon" type="png" href="../favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../style.css">
     <title>Tiendas - Gran Plaza 2</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
-        
-        h2,
-        h3,
-        h4,
-        h5 {
-            font-family: 'Cascadia Code';
-            font-size: 2rem;
-        }
-
-        h1 {
-            font-size: 4rem;
-            font-family: 'Cascadia Code';
-        }
-
-        p,
-        a {
-            font-family: 'Josefin Sans';
-            font-size: 1.5rem;
-        }
-
-        nav{
-            height: 25vh;
-        }
-
-
-        .container img {
-            width: 70%;
-        }
-
-        .container {
-            padding: 30px 15px;
-        }
-
-        .modal img,
-        .modal p {
-            width: 90%;
-            margin: 0 auto;
-            display: block;
-        }
-
-        .col img {
-            cursor: pointer;
-        }
-
-        .tienda:hover {
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            transition: 0.3s;
-        }
-    </style>
 
 </head>
 
@@ -73,24 +22,24 @@
     -->
     <header>
         <!-- Navbar Bootstrap 5 con fondo gris claro -->
-        <nav class="navbar navbar-expand-xxl navbar-light bg-secondary-subtle"
-            style="background-color: #f8f9fa;">
-            <div class="container">
-
+        <nav class="navbar navbar-expand-xl navbar-light bg-secondary-subtle" style="background-color: #f8f9fa;">
+            <div class="container-fluid px-5">
                 <!-- Título principal -->
-                <a class="navbar-brand text-dark" href="index.html" style="font-size: 2.4rem; font-weight: bold;">Gran
-                    Plaza 2</a>
+                <a class="navbar-brand text-dark" href="index.html" style="font-size: 2.4rem; font-weight: bold;">
+                    Gran Plaza 2
+                </a>
 
-                <!-- Botón para responsive -->
+                <!-- Botón responsive -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Enlaces del menú -->
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 p-4">
+
+                <!-- Contenedor del menú -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav mb-2 gap-3 p-4">
                         <li class="nav-item fs-5">
                             <a class="nav-link" href="../portada/index.html">Inicio</a>
                         </li>
@@ -125,9 +74,9 @@
     </header>
 
 
-    <article class="container">
+    <article class="container" id="tienResOcio">
         <!-- ICONOS (TIENDAS) -->
-        <section class="container my-4">
+        <section class="container my-4" id="tienResOcio">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
                 <!-- Zara -->
                 <div class="col text-center">
